@@ -57,14 +57,21 @@
       }
 
       .hero {
-        background: linear-gradient(135deg, rgba(10,10,10,0.88) 0%, rgba(30,30,30,0.82) 100%), url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1600&q=80') center/cover no-repeat;
+        background:
+          linear-gradient(
+            135deg,
+            rgba(10, 10, 10, 0.48) 0%,
+            rgba(20, 20, 20, 0.42) 100%
+          ),
+          url("https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&q=80")
+            center/cover no-repeat;
         color: #fff;
-        padding: 60px 32px;
+        padding: 90px 32px;
         text-align: center;
       }
       .hero-badge {
         display: inline-block;
-        background: #f0a5001a;
+        background: rgba(240, 165, 0, 0.15);
         border: 1px solid #f0a500;
         color: #f0a500;
         padding: 6px 16px;
@@ -74,19 +81,22 @@
         margin-bottom: 20px;
       }
       .hero h1 {
-        font-size: 40px;
+        font-size: 48px;
         font-weight: 900;
         margin-bottom: 16px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+        line-height: 1.15;
       }
       .hero h1 span {
         color: #f0a500;
       }
       .hero p {
         font-size: 18px;
-        color: #ccc;
+        color: #eee;
         max-width: 560px;
         margin: 0 auto;
         line-height: 1.6;
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
       }
 
       .social-bar {
@@ -160,6 +170,7 @@
       .cat-card:hover {
         border-color: #f0a500;
         box-shadow: 0 4px 20px rgba(240, 165, 0, 0.15);
+        transform: translateY(-3px);
       }
       .cat-icon {
         font-size: 40px;
@@ -175,13 +186,90 @@
         color: #888;
       }
 
+      /* SPLIT */
+      .split-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+      }
+      .split-content {
+        padding: 64px 52px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .split-content h2 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 16px;
+        line-height: 1.2;
+      }
+      .split-content p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 12px;
+      }
+      .split-dark {
+        background: #1a1a1a;
+      }
+      .split-dark h2 {
+        color: #fff;
+      }
+      .split-dark p {
+        color: #aaa;
+      }
+      .split-image {
+        position: relative;
+        min-height: 420px;
+        overflow: hidden;
+      }
+      .split-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .highlight-list {
+        list-style: none;
+        margin-top: 20px;
+      }
+      .highlight-list li {
+        padding: 10px 0;
+        font-size: 15px;
+        color: #444;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .highlight-list li.dark {
+        color: #bbb;
+        border-color: #2d2d2d;
+      }
+      .highlight-list li::before {
+        content: "★";
+        color: #f0a500;
+        font-size: 14px;
+        flex-shrink: 0;
+      }
+
       .how-buy {
-        background: #f9f9f9;
-        padding: 64px 32px;
+        background:
+          linear-gradient(rgba(10, 10, 10, 0.82), rgba(10, 10, 10, 0.82)),
+          url("https://images.unsplash.com/photo-1609347744403-2306e1f2e4b2?w=1600&q=80")
+            center/cover no-repeat;
+        padding: 72px 32px;
       }
       .how-buy-inner {
         max-width: 1100px;
         margin: 0 auto;
+      }
+      .how-buy .section-title h2 {
+        color: #fff;
+      }
+      .how-buy .section-title p {
+        color: #aaa;
       }
       .steps {
         display: grid;
@@ -209,28 +297,34 @@
         font-size: 15px;
         font-weight: 700;
         margin-bottom: 6px;
+        color: #fff;
       }
       .step p {
         font-size: 13px;
-        color: #666;
+        color: #aaa;
         line-height: 1.5;
       }
 
       .cta-section {
-        background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)), url('https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1600&q=80') center/cover no-repeat;
+        background:
+          linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.55)),
+          url("https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1600&q=80")
+            center/cover no-repeat;
         color: #fff;
         text-align: center;
-        padding: 64px 32px;
+        padding: 90px 32px;
       }
       .cta-section h2 {
-        font-size: 32px;
+        font-size: 36px;
         font-weight: 800;
         margin-bottom: 14px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
       }
       .cta-section p {
         font-size: 17px;
-        color: #aaa;
+        color: #ddd;
         margin-bottom: 32px;
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
       }
       .cta-btns {
         display: flex;
@@ -248,11 +342,13 @@
       .btn-yellow {
         background: #f0a500;
         color: #1a1a1a;
+        box-shadow: 0 4px 20px rgba(240, 165, 0, 0.45);
       }
       .btn-outline {
-        background: transparent;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
         color: #fff;
-        border: 2px solid #555;
+        border: 2px solid rgba(255, 255, 255, 0.4);
       }
 
       footer {
@@ -268,6 +364,22 @@
       footer a {
         color: #f0a500;
         text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 32px;
+        }
+        .split-section {
+          grid-template-columns: 1fr;
+        }
+        .split-image {
+          min-height: 260px;
+          order: -1;
+        }
+        .split-content {
+          padding: 48px 32px;
+        }
       }
     </style>
   </head>
@@ -296,7 +408,7 @@
         href="https://www.facebook.com/people/Assos-Groups/61575774023804/"
         target="_blank"
         class="social-btn"
-        >📘 Facebook</
+        >📘 Facebook</a
       >
       <a
         href="https://instagram.com/assosgroups"
@@ -350,6 +462,32 @@
       </div>
     </section>
 
+    <!-- SPLIT: WHY BUY FROM US -->
+    <div class="split-section">
+      <div class="split-image">
+        <img
+          src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80"
+          alt="Shop Deals"
+        />
+      </div>
+      <div class="split-content">
+        <h2>Why Buy From Us?</h2>
+        <p>
+          We're a local Summerville business — no middlemen, no unnecessary
+          markups. Direct savings passed straight to you.
+        </p>
+        <ul class="highlight-list">
+          <li>Brand new, unused, sealed products</li>
+          <li>Up to 70% off retail prices</li>
+          <li>Local pickup in Summerville, SC</li>
+          <li>Shipping available on request</li>
+          <li>Pay via Zelle, Venmo, or cash</li>
+          <li>New inventory posted daily</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HOW TO BUY -->
     <div class="how-buy">
       <div class="how-buy-inner">
         <div class="section-title">
@@ -393,6 +531,32 @@
       </div>
     </div>
 
+    <!-- SPLIT: LOCAL TRUST -->
+    <div class="split-section">
+      <div class="split-content split-dark">
+        <h2>Local, Trusted & Always Fresh Stock</h2>
+        <p>
+          We live and work right here in Summerville. Come see us in person or
+          reach out anytime — we respond fast.
+        </p>
+        <ul class="highlight-list">
+          <li class="dark">Summerville, SC — local pickup available</li>
+          <li class="dark">Respond within hours — real people, not bots</li>
+          <li class="dark">
+            New products listed daily on Facebook & Instagram
+          </li>
+          <li class="dark">Trusted by the local community since day one</li>
+        </ul>
+      </div>
+      <div class="split-image">
+        <img
+          src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?w=800&q=80"
+          alt="Local Business"
+        />
+      </div>
+    </div>
+
+    <!-- CTA -->
     <div class="cta-section">
       <h2>See the Latest Deals</h2>
       <p>New items posted daily. Don't miss out — follow us now.</p>
